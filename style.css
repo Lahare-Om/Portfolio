@@ -103,14 +103,14 @@ main {
 .hero {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  align-items: center;
+  align-items: start;
   gap: 2rem;
   min-height: calc(100vh - 90px);
+  padding-top: 1.5rem;
 }
 
 .hero-content {
   max-width: 640px;
-  margin-bottom: -2rem;
 }
 
 .hero-side {
@@ -126,7 +126,7 @@ main {
 
 .photo-frame {
   position: relative;
-  width: min(100%, 280px);
+  width: min(100%, 320px);
   aspect-ratio: 1 / 1;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
