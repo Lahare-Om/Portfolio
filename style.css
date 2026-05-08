@@ -293,7 +293,7 @@ h1 {
 }
 
 .hero-copy {
-  margin: 1.5rem 0 2rem;
+  margin: 1rem 0 1.5rem;
   max-width: 46rem;
   color: #cbd5e1;
   font-size: 1.05rem;
@@ -301,9 +301,7 @@ h1 {
 }
 
 .hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: none;
 }
 
 .btn {
@@ -346,7 +344,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.1rem;
 }
 
 .hero-metrics div {
