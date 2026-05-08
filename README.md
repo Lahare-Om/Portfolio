@@ -15,3 +15,7 @@ A simple responsive portfolio website scaffold built with HTML and CSS. Use this
 3. Open PowerShell in this folder and run `.\deploy.ps1`.
 4. Enter the repo URL when prompted.
 5. Enable GitHub Pages in the repo settings: branch `main`, folder `/ (root)`.
+
+## Add your profile photo
+
+Put your photo file in `assets/profile.svg` to replace the placeholder. If you want to use a JPG or PNG instead, update the `img src` in `index.html` to match the file name.
