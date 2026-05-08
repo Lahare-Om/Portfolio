@@ -23,7 +23,7 @@
 
   <main>
     <section class="hero" id="hero">
-      <div class="hero-content">
+      <div class="hero-content reveal">
         <p class="eyebrow">Data Analyst | AI/ML Engineer | DevOps Engineer</p>
         <h1>Om Lahare</h1>
         <p class="hero-copy">Final-year Computer Science student with hands-on experience in data analytics, machine learning, and DevOps. I build predictive models, deploy scalable applications, and turn data into actionable insights.</p>
@@ -31,7 +31,7 @@
           <a class="btn btn-primary" href="#projects">See Projects</a>
           <a class="btn btn-secondary" href="#contact">Contact Me</a>
         </div>
-        <div class="hero-metrics">
+        <div class="hero-metrics reveal">
           <div>
             <strong>Location</strong>
             <span>Pune, Maharashtra</span>
@@ -46,11 +46,11 @@
           </div>
         </div>
       </div>
-      <div class="hero-side">
+      <div class="hero-side reveal">
         <div class="photo-frame">
           <img src="assets/profile.jpg" alt="Om Lahare" />
         </div>
-        <div class="hero-card">
+        <div class="hero-card reveal">
           <p class="card-label">Professional Summary</p>
           <p>Skilled in Python, SQL, Pandas, NumPy, Scikit-learn, Docker, Kubernetes, and Argo CD. Experienced in building ML models, performing EDA, and deploying cloud-native applications.</p>
           <div class="skill-tags">
@@ -63,7 +63,7 @@
       </div>
     </section>
 
-    <section class="section about" id="about">
+    <section class="section reveal about" id="about">
       <div class="section-heading">
         <span>About Me</span>
         <h2>I turn complex data into practical solutions.</h2>
@@ -71,7 +71,7 @@
       <p>As a final-year Computer Science student, I combine analytics, machine learning, and DevOps practices to build reliable solutions. I enjoy finding patterns in data, designing models, and deploying systems that help teams make smarter decisions.</p>
     </section>
 
-    <section class="section experience" id="experience">
+    <section class="section reveal experience" id="experience">
       <div class="section-heading">
         <span>Experience</span>
         <h2>Professional internships and contributions</h2>
@@ -106,7 +106,7 @@
       </div>
     </section>
 
-    <section class="section projects" id="projects">
+    <section class="section reveal projects" id="projects">
       <div class="section-heading">
         <span>Projects</span>
         <h2>Selected work</h2>
@@ -125,7 +125,7 @@
       </div>
     </section>
 
-    <section class="section skills" id="skills">
+    <section class="section reveal skills" id="skills">
       <div class="section-heading">
         <span>Skills</span>
         <h2>Capabilities across analytics, ML, and cloud</h2>
@@ -150,7 +150,7 @@
       </div>
     </section>
 
-    <section class="section education" id="education">
+    <section class="section reveal education" id="education">
       <div class="section-heading">
         <span>Education</span>
         <h2>Academic background</h2>
@@ -173,7 +173,7 @@
       </div>
     </section>
 
-    <section class="section contact" id="contact">
+    <section class="section reveal contact" id="contact">
       <div class="section-heading">
         <span>Contact</span>
         <h2>Work with me</h2>
@@ -186,8 +186,24 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer reveal">
     <p>© 2026 Om Lahare. Built with HTML, CSS, and JavaScript.</p>
   </footer>
+
+  <script>
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.18,
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
 </body>
 </html>
