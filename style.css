@@ -316,6 +316,44 @@ h1 {
   font-size: 0.95rem;
 }
 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+}
+
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 1.1rem;
+  background: rgba(96, 165, 250, 0.12);
+  color: #e2e8f0;
+  text-decoration: none;
+  border: 1px solid rgba(96, 165, 250, 0.18);
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-pill:hover {
+  transform: translateY(-2px);
+  background: rgba(96, 165, 250, 0.18);
+  border-color: rgba(96, 165, 250, 0.35);
+}
+
+.contact-pill svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.contact-pill span {
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
 .section {
   margin-top: 5rem;
   scroll-margin-top: 90px;
