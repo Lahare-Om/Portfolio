@@ -116,11 +116,16 @@ main {
   display: grid;
   gap: 1.5rem;
   align-items: start;
+  justify-items: center;
+}
+
+.hero-side > * {
+  width: min(100%, 360px);
 }
 
 .photo-frame {
   position: relative;
-  width: min(100%, 360px);
+  width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   padding: 0.55rem;
