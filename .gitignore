@@ -1,0 +1,9 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code folder settings
+.vscode/
+
+# Ignore deployment scripts
+deploy.ps1
