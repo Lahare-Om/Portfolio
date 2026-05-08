@@ -110,6 +110,7 @@ main {
 
 .hero-content {
   max-width: 640px;
+  margin-bottom: -2rem;
 }
 
 .hero-side {
@@ -120,12 +121,13 @@ main {
 }
 
 .hero-side > * {
-  width: min(100%, 360px);
+  width: 100%;
 }
 
 .photo-frame {
   position: relative;
-  width: 100%;
+  width: min(100%, 280px);
+  aspect-ratio: 1 / 1;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   padding: 0.55rem;
@@ -187,8 +189,8 @@ main {
 
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.75s ease, transform 0.75s ease;
+  transform: translateY(50px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
   will-change: opacity, transform;
 }
 
